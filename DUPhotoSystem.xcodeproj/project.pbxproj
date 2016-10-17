@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCAFA8491DB58DD60001325B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA8481DB58DD60001325B /* AppDelegate.swift */; };
+		BCAFA84B1DB58DD60001325B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA84A1DB58DD60001325B /* SignInVC.swift */; };
+		BCAFA84E1DB58DD60001325B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAFA84C1DB58DD60001325B /* Main.storyboard */; };
+		BCAFA8501DB58DD60001325B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAFA84F1DB58DD60001325B /* Assets.xcassets */; };
+		BCAFA8531DB58DD60001325B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAFA8511DB58DD60001325B /* LaunchScreen.storyboard */; };
+		BCAFA85D1DB58E4A0001325B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCAFA85C1DB58E4A0001325B /* GoogleService-Info.plist */; };
+		EE7BBE7F241462F5E2AB0E10 /* Pods_DUPhotoSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B631D80BCADBDB486D4FF959 /* Pods_DUPhotoSystem.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0649DDC42A014ABB443933FD /* Pods-DUPhotoSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DUPhotoSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-DUPhotoSystem/Pods-DUPhotoSystem.release.xcconfig"; sourceTree = "<group>"; };
+		AC9F8BC6A5643B73C1E417BB /* Pods-DUPhotoSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DUPhotoSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DUPhotoSystem/Pods-DUPhotoSystem.debug.xcconfig"; sourceTree = "<group>"; };
+		B631D80BCADBDB486D4FF959 /* Pods_DUPhotoSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DUPhotoSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCAFA8451DB58DD60001325B /* DUPhotoSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DUPhotoSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCAFA8481DB58DD60001325B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCAFA84A1DB58DD60001325B /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		BCAFA84D1DB58DD60001325B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCAFA84F1DB58DD60001325B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCAFA8521DB58DD60001325B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCAFA8541DB58DD60001325B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAFA85C1DB58E4A0001325B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCAFA8421DB58DD60001325B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7BBE7F241462F5E2AB0E10 /* Pods_DUPhotoSystem.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17D0699D3EE9547DFC8E98BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC9F8BC6A5643B73C1E417BB /* Pods-DUPhotoSystem.debug.xcconfig */,
+				0649DDC42A014ABB443933FD /* Pods-DUPhotoSystem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8924B9F954D178A66F8FB8DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B631D80BCADBDB486D4FF959 /* Pods_DUPhotoSystem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCAFA83C1DB58DD60001325B = {
+			isa = PBXGroup;
+			children = (
+				BCAFA8471DB58DD60001325B /* DUPhotoSystem */,
+				BCAFA8461DB58DD60001325B /* Products */,
+				17D0699D3EE9547DFC8E98BA /* Pods */,
+				8924B9F954D178A66F8FB8DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCAFA8461DB58DD60001325B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCAFA8451DB58DD60001325B /* DUPhotoSystem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCAFA8471DB58DD60001325B /* DUPhotoSystem */ = {
+			isa = PBXGroup;
+			children = (
+				BCAFA85E1DB590CD0001325B /* Model */,
+				BCAFA8601DB590E40001325B /* Controller */,
+				BCAFA85F1DB590D60001325B /* View */,
+				BCAFA8481DB58DD60001325B /* AppDelegate.swift */,
+				BCAFA84C1DB58DD60001325B /* Main.storyboard */,
+				BCAFA84F1DB58DD60001325B /* Assets.xcassets */,
+				BCAFA8511DB58DD60001325B /* LaunchScreen.storyboard */,
+				BCAFA8541DB58DD60001325B /* Info.plist */,
+				BCAFA85C1DB58E4A0001325B /* GoogleService-Info.plist */,
+			);
+			path = DUPhotoSystem;
+			sourceTree = "<group>";
+		};
+		BCAFA85E1DB590CD0001325B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BCAFA85F1DB590D60001325B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BCAFA8601DB590E40001325B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCAFA84A1DB58DD60001325B /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCAFA8441DB58DD60001325B /* DUPhotoSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCAFA8571DB58DD60001325B /* Build configuration list for PBXNativeTarget "DUPhotoSystem" */;
+			buildPhases = (
+				34334936215AB51A1848606E /* [CP] Check Pods Manifest.lock */,
+				BCAFA8411DB58DD60001325B /* Sources */,
+				BCAFA8421DB58DD60001325B /* Frameworks */,
+				BCAFA8431DB58DD60001325B /* Resources */,
+				90F210EBC0A9F8E310F2641C /* [CP] Embed Pods Frameworks */,
+				BA3A32E2750914539FA36CD2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DUPhotoSystem;
+			productName = DUPhotoSystem;
+			productReference = BCAFA8451DB58DD60001325B /* DUPhotoSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCAFA83D1DB58DD60001325B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = lcocox;
+				TargetAttributes = {
+					BCAFA8441DB58DD60001325B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6X52YL4D6T;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BCAFA8401DB58DD60001325B /* Build configuration list for PBXProject "DUPhotoSystem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCAFA83C1DB58DD60001325B;
+			productRefGroup = BCAFA8461DB58DD60001325B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCAFA8441DB58DD60001325B /* DUPhotoSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCAFA8431DB58DD60001325B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAFA8531DB58DD60001325B /* LaunchScreen.storyboard in Resources */,
+				BCAFA8501DB58DD60001325B /* Assets.xcassets in Resources */,
+				BCAFA85D1DB58E4A0001325B /* GoogleService-Info.plist in Resources */,
+				BCAFA84E1DB58DD60001325B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34334936215AB51A1848606E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90F210EBC0A9F8E310F2641C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DUPhotoSystem/Pods-DUPhotoSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA3A32E2750914539FA36CD2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DUPhotoSystem/Pods-DUPhotoSystem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCAFA8411DB58DD60001325B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAFA84B1DB58DD60001325B /* SignInVC.swift in Sources */,
+				BCAFA8491DB58DD60001325B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BCAFA84C1DB58DD60001325B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCAFA84D1DB58DD60001325B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCAFA8511DB58DD60001325B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCAFA8521DB58DD60001325B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCAFA8551DB58DD60001325B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCAFA8561DB58DD60001325B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCAFA8581DB58DD60001325B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC9F8BC6A5643B73C1E417BB /* Pods-DUPhotoSystem.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6X52YL4D6T;
+				INFOPLIST_FILE = DUPhotoSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinceluo.io.DUPhotoSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BCAFA8591DB58DD60001325B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0649DDC42A014ABB443933FD /* Pods-DUPhotoSystem.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6X52YL4D6T;
+				INFOPLIST_FILE = DUPhotoSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinceluo.io.DUPhotoSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCAFA8401DB58DD60001325B /* Build configuration list for PBXProject "DUPhotoSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCAFA8551DB58DD60001325B /* Debug */,
+				BCAFA8561DB58DD60001325B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCAFA8571DB58DD60001325B /* Build configuration list for PBXNativeTarget "DUPhotoSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCAFA8581DB58DD60001325B /* Debug */,
+				BCAFA8591DB58DD60001325B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCAFA83D1DB58DD60001325B /* Project object */;
+}
