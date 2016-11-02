@@ -38,6 +38,7 @@
 		BCAFA8661DC71F3D0001325B /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		BCAFA8681DC720F90001325B /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		BCAFA86A1DC722440001325B /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		BCAFA8A51DCA9F440001325B /* DUPhotoSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DUPhotoSystem.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		BCAFA8471DB58DD60001325B /* DUPhotoSystem */ = {
 			isa = PBXGroup;
 			children = (
+				BCAFA8A51DCA9F440001325B /* DUPhotoSystem.entitlements */,
 				BCAFA8631DC71D3F0001325B /* Util */,
 				BCAFA85E1DB590CD0001325B /* Model */,
 				BCAFA8601DB590E40001325B /* Controller */,
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6X52YL4D6T;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -391,6 +398,7 @@
 			baseConfigurationReference = AC9F8BC6A5643B73C1E417BB /* Pods-DUPhotoSystem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DUPhotoSystem/DUPhotoSystem.entitlements;
 				DEVELOPMENT_TEAM = 6X52YL4D6T;
 				INFOPLIST_FILE = DUPhotoSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -405,6 +413,7 @@
 			baseConfigurationReference = 0649DDC42A014ABB443933FD /* Pods-DUPhotoSystem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DUPhotoSystem/DUPhotoSystem.entitlements;
 				DEVELOPMENT_TEAM = 6X52YL4D6T;
 				INFOPLIST_FILE = DUPhotoSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
