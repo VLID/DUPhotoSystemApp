@@ -18,6 +18,7 @@
 		BCAFA8671DC71F3D0001325B /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA8661DC71F3D0001325B /* RoundBtn.swift */; };
 		BCAFA8691DC720F90001325B /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA8681DC720F90001325B /* FancyField.swift */; };
 		BCAFA86B1DC722440001325B /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA86A1DC722440001325B /* FancyBtn.swift */; };
+		BCAFA8A71DCAD4B10001325B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA8A61DCAD4B10001325B /* FeedVC.swift */; };
 		EE7BBE7F241462F5E2AB0E10 /* Pods_DUPhotoSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B631D80BCADBDB486D4FF959 /* Pods_DUPhotoSystem.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		BCAFA8681DC720F90001325B /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		BCAFA86A1DC722440001325B /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		BCAFA8A51DCA9F440001325B /* DUPhotoSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DUPhotoSystem.entitlements; sourceTree = "<group>"; };
+		BCAFA8A61DCAD4B10001325B /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				BCAFA84A1DB58DD60001325B /* SignInVC.swift */,
+				BCAFA8A61DCAD4B10001325B /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				BCAFA84B1DB58DD60001325B /* SignInVC.swift in Sources */,
 				BCAFA8671DC71F3D0001325B /* RoundBtn.swift in Sources */,
 				BCAFA8491DB58DD60001325B /* AppDelegate.swift in Sources */,
+				BCAFA8A71DCAD4B10001325B /* FeedVC.swift in Sources */,
 				BCAFA8621DC71CBF0001325B /* FancyView.swift in Sources */,
 				BCAFA8651DC71D6B0001325B /* Constants.swift in Sources */,
 				BCAFA86B1DC722440001325B /* FancyBtn.swift in Sources */,
