@@ -19,6 +19,7 @@
 		BCAFA8691DC720F90001325B /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA8681DC720F90001325B /* FancyField.swift */; };
 		BCAFA86B1DC722440001325B /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA86A1DC722440001325B /* FancyBtn.swift */; };
 		BCAFA8A71DCAD4B10001325B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA8A61DCAD4B10001325B /* FeedVC.swift */; };
+		BCAFA8A91DCD8A350001325B /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA8A81DCD8A350001325B /* CircleView.swift */; };
 		EE7BBE7F241462F5E2AB0E10 /* Pods_DUPhotoSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B631D80BCADBDB486D4FF959 /* Pods_DUPhotoSystem.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		BCAFA86A1DC722440001325B /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		BCAFA8A51DCA9F440001325B /* DUPhotoSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DUPhotoSystem.entitlements; sourceTree = "<group>"; };
 		BCAFA8A61DCAD4B10001325B /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		BCAFA8A81DCD8A350001325B /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				BCAFA8661DC71F3D0001325B /* RoundBtn.swift */,
 				BCAFA8681DC720F90001325B /* FancyField.swift */,
 				BCAFA86A1DC722440001325B /* FancyBtn.swift */,
+				BCAFA8A81DCD8A350001325B /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCAFA8A91DCD8A350001325B /* CircleView.swift in Sources */,
 				BCAFA8691DC720F90001325B /* FancyField.swift in Sources */,
 				BCAFA84B1DB58DD60001325B /* SignInVC.swift in Sources */,
 				BCAFA8671DC71F3D0001325B /* RoundBtn.swift in Sources */,
