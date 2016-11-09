@@ -20,6 +20,7 @@
 		BCAFA86B1DC722440001325B /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA86A1DC722440001325B /* FancyBtn.swift */; };
 		BCAFA8A71DCAD4B10001325B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA8A61DCAD4B10001325B /* FeedVC.swift */; };
 		BCAFA8A91DCD8A350001325B /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA8A81DCD8A350001325B /* CircleView.swift */; };
+		BCB599941DD3DE2600113697 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB599931DD3DE2600113697 /* PostCell.swift */; };
 		EE7BBE7F241462F5E2AB0E10 /* Pods_DUPhotoSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B631D80BCADBDB486D4FF959 /* Pods_DUPhotoSystem.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		BCAFA8A51DCA9F440001325B /* DUPhotoSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DUPhotoSystem.entitlements; sourceTree = "<group>"; };
 		BCAFA8A61DCAD4B10001325B /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		BCAFA8A81DCD8A350001325B /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		BCB599931DD3DE2600113697 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				BCAFA8681DC720F90001325B /* FancyField.swift */,
 				BCAFA86A1DC722440001325B /* FancyBtn.swift */,
 				BCAFA8A81DCD8A350001325B /* CircleView.swift */,
+				BCB599931DD3DE2600113697 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				BCAFA8621DC71CBF0001325B /* FancyView.swift in Sources */,
 				BCAFA8651DC71D6B0001325B /* Constants.swift in Sources */,
 				BCAFA86B1DC722440001325B /* FancyBtn.swift in Sources */,
+				BCB599941DD3DE2600113697 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
