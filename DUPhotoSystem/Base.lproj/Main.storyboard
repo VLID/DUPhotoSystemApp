@@ -22,18 +22,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="du-bg" translatesAutoresizingMaskIntoConstraints="NO" id="e22-Mb-Jjy">
+                                <rect key="frame" x="0.0" y="125" width="375" height="479"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0um-PX-l1B" customClass="FancyView" customModule="DUPhotoSystem" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duPhotoSharing-logo" translatesAutoresizingMaskIntoConstraints="NO" id="GvZ-bF-czA">
-                                        <rect key="frame" x="61" y="26" width="252" height="94"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="du logo" translatesAutoresizingMaskIntoConstraints="NO" id="GvZ-bF-czA">
+                                        <rect key="frame" x="-5" y="8" width="384" height="136"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.14901960784313725" green="0.77647058823529413" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.69019607843137254" green="0.054901960784313725" blue="0.16078431372549018" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="GvZ-bF-czA" firstAttribute="centerX" secondItem="0um-PX-l1B" secondAttribute="centerX" id="7vc-2r-wB2"/>
                                     <constraint firstAttribute="height" constant="128" id="FNP-Cq-muu"/>
-                                    <constraint firstItem="GvZ-bF-czA" firstAttribute="centerY" secondItem="0um-PX-l1B" secondAttribute="centerY" constant="9" id="z0V-r8-J8z"/>
+                                    <constraint firstItem="GvZ-bF-czA" firstAttribute="centerY" secondItem="0um-PX-l1B" secondAttribute="centerY" constant="12" id="z0V-r8-J8z"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAr-dw-JbR">
@@ -46,7 +49,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.67450980392156867" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.69019607839999997" green="0.054901960780000002" blue="0.16078431369999999" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="OV3-YI-deM" firstAttribute="top" secondItem="JAr-dw-JbR" secondAttribute="top" constant="8" id="28g-5K-tzN"/>
                                     <constraint firstAttribute="trailing" secondItem="OV3-YI-deM" secondAttribute="trailing" constant="8" id="Ak1-y3-IOe"/>
@@ -56,16 +59,16 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxl-ff-4gI">
-                                <rect key="frame" x="16" y="163" width="343" height="20"/>
+                                <rect key="frame" x="16" y="149" width="343" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="gge-QV-qTb"/>
+                                    <constraint firstAttribute="height" constant="34" id="gge-QV-qTb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.69019607839999997" green="0.054901960780000002" blue="0.16078431369999999" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YV3-Te-p4a" customClass="RoundBtn" customModule="DUPhotoSystem" customModuleProvider="target">
-                                <rect key="frame" x="112.5" y="221" width="150" height="150"/>
+                                <rect key="frame" x="112.5" y="202" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.22943970561027527" green="0.34702008962631226" blue="0.59602290391921997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="0V7-Il-2CS"/>
@@ -81,19 +84,21 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZhP-Sn-4ub" customClass="FancyField" customModule="DUPhotoSystem" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="25"/>
-                                        <color key="textColor" red="0.22943970561027527" green="0.34702008962631226" blue="0.59602290391921997" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.22943970559999999" green="0.34702008960000003" blue="0.59602290390000001" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qIW-qV-Hzo" customClass="FancyField" customModule="DUPhotoSystem" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="40" width="283" height="25"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.22943970559999999" green="0.34702008960000003" blue="0.59602290390000001" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ast-8Y-dBt" customClass="FancyBtn" customModule="DUPhotoSystem" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="80" width="283" height="37"/>
-                                        <color key="backgroundColor" red="1" green="0.3411764705882353" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.69019607839999997" green="0.054901960780000002" blue="0.16078431369999999" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -104,24 +109,44 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTh-NN-Hfe">
+                                <rect key="frame" x="161" y="372" width="53" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="b7X-va-QmX"/>
+                                    <constraint firstAttribute="width" constant="53" id="xVb-MT-6ir"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="28"/>
+                                <color key="textColor" red="0.69019607839999997" green="0.054901960780000002" blue="0.16078431369999999" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yhr-5x-LYE" firstAttribute="top" secondItem="bTh-NN-Hfe" secondAttribute="bottom" constant="17" id="1fy-Qc-Cng"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JAr-dw-JbR" secondAttribute="bottom" id="3TY-J5-K9E"/>
                             <constraint firstItem="0um-PX-l1B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="76X-ZN-6ud"/>
-                            <constraint firstItem="kxl-ff-4gI" firstAttribute="top" secondItem="0um-PX-l1B" secondAttribute="bottom" constant="35" id="CLB-gY-sXp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e22-Mb-Jjy" secondAttribute="bottom" constant="63" id="8kM-Xv-2oc"/>
+                            <constraint firstItem="kxl-ff-4gI" firstAttribute="top" secondItem="0um-PX-l1B" secondAttribute="bottom" constant="21" id="CLB-gY-sXp"/>
                             <constraint firstItem="yhr-5x-LYE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="KoF-hp-SC7"/>
                             <constraint firstAttribute="trailing" secondItem="0um-PX-l1B" secondAttribute="trailing" id="MIQ-6i-uhE"/>
+                            <constraint firstItem="e22-Mb-Jjy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NCB-wR-gIM"/>
                             <constraint firstAttribute="trailing" secondItem="JAr-dw-JbR" secondAttribute="trailing" id="QQN-aW-Dgd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yhr-5x-LYE" secondAttribute="trailing" constant="30" id="QlM-rt-UZv"/>
                             <constraint firstItem="kxl-ff-4gI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="R00-iS-Wp9"/>
+                            <constraint firstItem="bTh-NN-Hfe" firstAttribute="top" secondItem="YV3-Te-p4a" secondAttribute="bottom" constant="20" id="UF0-ee-af4"/>
+                            <constraint firstAttribute="trailing" secondItem="e22-Mb-Jjy" secondAttribute="trailing" id="WZ3-iz-h4p"/>
                             <constraint firstItem="kxl-ff-4gI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Xfw-Wj-KH7"/>
                             <constraint firstItem="JAr-dw-JbR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ysn-CC-uAs"/>
+                            <constraint firstItem="bTh-NN-Hfe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aLA-GE-FgZ"/>
                             <constraint firstItem="0um-PX-l1B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="efL-Y3-SiH"/>
                             <constraint firstItem="YV3-Te-p4a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eiF-la-5Ja"/>
                             <constraint firstItem="yhr-5x-LYE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fZF-Bj-LMW"/>
-                            <constraint firstItem="yhr-5x-LYE" firstAttribute="top" secondItem="YV3-Te-p4a" secondAttribute="bottom" constant="58" id="hQ4-Eh-eOa"/>
-                            <constraint firstItem="YV3-Te-p4a" firstAttribute="top" secondItem="kxl-ff-4gI" secondAttribute="bottom" constant="38" id="tU7-7N-0Jw"/>
+                            <constraint firstItem="yhr-5x-LYE" firstAttribute="top" secondItem="YV3-Te-p4a" secondAttribute="bottom" constant="77" id="hQ4-Eh-eOa"/>
+                            <constraint firstItem="e22-Mb-Jjy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lMy-GV-WhZ"/>
+                            <constraint firstItem="YV3-Te-p4a" firstAttribute="top" secondItem="kxl-ff-4gI" secondAttribute="bottom" constant="19" id="tU7-7N-0Jw"/>
+                            <constraint firstItem="e22-Mb-Jjy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="105" id="uuB-O6-E5G"/>
+                            <constraint firstItem="bTh-NN-Hfe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="145" id="xIR-qI-5hf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bTh-NN-Hfe" secondAttribute="trailing" constant="145" id="zTJ-vm-OOD"/>
                         </constraints>
                     </view>
                     <connections>
@@ -132,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-297" y="174"/>
+            <point key="canvasLocation" x="-298.39999999999998" y="173.16341829085459"/>
         </scene>
         <!--FeedVC-->
         <scene sceneID="TGq-Og-VwV">
@@ -167,7 +192,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.14901960780000001" green="0.77647058820000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.69019607839999997" green="0.054901960780000002" blue="0.16078431369999999" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="tAD-IN-mlg" firstAttribute="centerX" secondItem="7hj-DN-ifM" secondAttribute="centerX" id="Hyw-R7-Qvu"/>
                                     <constraint firstItem="tAD-IN-mlg" firstAttribute="centerY" secondItem="KEl-3f-mdC" secondAttribute="centerY" constant="-0.5" id="cxM-4b-5Vw"/>
@@ -184,11 +209,15 @@
                                         <subviews>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="I2M-kS-W9X" customClass="CircleView" customModule="DUPhotoSystem" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
-                                                <color key="backgroundColor" red="0.0" green="0.67450980390000004" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.69019607839999997" green="0.054901960780000002" blue="0.16078431369999999" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="49" id="HO3-4G-NlK"/>
                                                     <constraint firstAttribute="height" constant="49" id="ngy-FG-U6d"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="o91-vl-khT" appends="YES" id="cQq-HG-FrB"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCG-9g-mCP" customClass="FancyField" customModule="DUPhotoSystem" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="0.0" width="209" height="49"/>
@@ -198,7 +227,7 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpP-ZI-Hzd" customClass="RoundBtn" customModule="DUPhotoSystem" customModuleProvider="target">
                                                 <rect key="frame" x="278" y="0.0" width="49" height="49"/>
-                                                <color key="backgroundColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.69019607839999997" green="0.054901960780000002" blue="0.16078431369999999" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="49" id="BCX-4m-ywj"/>
                                                     <constraint firstAttribute="height" constant="49" id="xvo-yG-bd7"/>
@@ -247,7 +276,7 @@
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vince Luo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upC-mQ-vyF">
                                                                             <rect key="frame" x="60" y="0.0" width="207" height="60"/>
                                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
-                                                                            <color key="textColor" red="0.38196257039999998" green="0.99711091669999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <color key="textColor" red="0.69019607839999997" green="0.054901960780000002" blue="0.16078431369999999" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="tid-zf-heH">
@@ -276,16 +305,16 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Kda-a8-RJw">
-                                                            <rect key="frame" x="259.5" y="403" width="75.5" height="22"/>
+                                                            <rect key="frame" x="259" y="403" width="76" height="22"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tX-g0-xhL">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="35.5" height="22"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="36" height="22"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                                                    <color key="textColor" red="0.14582490819999999" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="textColor" red="0.69019607839999997" green="0.054901960780000002" blue="0.16078431369999999" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QB-ID-qZL">
-                                                                    <rect key="frame" x="39.5" y="0.0" width="36" height="22"/>
+                                                                    <rect key="frame" x="40" y="0.0" width="36" height="22"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -338,6 +367,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="I2M-kS-W9X" id="Rrh-Uk-RuG"/>
                         <outlet property="tableView" destination="NGi-xe-jnA" id="rT7-nl-3YS"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="Yvh-YI-gNG"/>
                     </connections>
@@ -348,6 +378,11 @@
                         <action selector="signOutTapped:" destination="w6z-ka-SEC" id="7Cn-zw-dB5"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="o91-vl-khT">
+                    <connections>
+                        <action selector="addImageTapped:" destination="w6z-ka-SEC" id="AZj-59-9n7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="488.80000000000001" y="173.16341829085459"/>
         </scene>
@@ -355,7 +390,8 @@
     <resources>
         <image name="add-image" width="88" height="88"/>
         <image name="add-post" width="88" height="88"/>
-        <image name="duPhotoSharing-logo" width="252" height="94"/>
+        <image name="du logo" width="384" height="136"/>
+        <image name="du-bg" width="720" height="540"/>
         <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
         <image name="placeholder5" width="1050" height="876"/>
