@@ -21,6 +21,7 @@
 		BCAFA8A71DCAD4B10001325B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA8A61DCAD4B10001325B /* FeedVC.swift */; };
 		BCAFA8A91DCD8A350001325B /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFA8A81DCD8A350001325B /* CircleView.swift */; };
 		BCB599941DD3DE2600113697 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB599931DD3DE2600113697 /* PostCell.swift */; };
+		BCB599971DD3FEFF00113697 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB599961DD3FEFF00113697 /* DataService.swift */; };
 		EE7BBE7F241462F5E2AB0E10 /* Pods_DUPhotoSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B631D80BCADBDB486D4FF959 /* Pods_DUPhotoSystem.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		BCAFA8A61DCAD4B10001325B /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		BCAFA8A81DCD8A350001325B /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		BCB599931DD3DE2600113697 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		BCB599961DD3FEFF00113697 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		BCAFA8471DB58DD60001325B /* DUPhotoSystem */ = {
 			isa = PBXGroup;
 			children = (
+				BCB599951DD3FEE300113697 /* Services */,
 				BCAFA8A51DCA9F440001325B /* DUPhotoSystem.entitlements */,
 				BCAFA8631DC71D3F0001325B /* Util */,
 				BCAFA85E1DB590CD0001325B /* Model */,
@@ -147,6 +150,14 @@
 				BCAFA8641DC71D6B0001325B /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		BCB599951DD3FEE300113697 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BCB599961DD3FEFF00113697 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +295,7 @@
 				BCAFA84B1DB58DD60001325B /* SignInVC.swift in Sources */,
 				BCAFA8671DC71F3D0001325B /* RoundBtn.swift in Sources */,
 				BCAFA8491DB58DD60001325B /* AppDelegate.swift in Sources */,
+				BCB599971DD3FEFF00113697 /* DataService.swift in Sources */,
 				BCAFA8A71DCAD4B10001325B /* FeedVC.swift in Sources */,
 				BCAFA8621DC71CBF0001325B /* FancyView.swift in Sources */,
 				BCAFA8651DC71D6B0001325B /* Constants.swift in Sources */,
