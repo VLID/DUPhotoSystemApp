@@ -25,15 +25,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0um-PX-l1B" customClass="FancyView" customModule="DUPhotoSystem" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopes-logo" translatesAutoresizingMaskIntoConstraints="NO" id="GvZ-bF-czA">
-                                        <rect key="frame" x="112.5" y="17" width="150" height="94"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duPhotoSharing-logo" translatesAutoresizingMaskIntoConstraints="NO" id="GvZ-bF-czA">
+                                        <rect key="frame" x="61" y="26" width="252" height="94"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.77647058823529413" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="GvZ-bF-czA" firstAttribute="centerX" secondItem="0um-PX-l1B" secondAttribute="centerX" id="7vc-2r-wB2"/>
                                     <constraint firstAttribute="height" constant="128" id="FNP-Cq-muu"/>
-                                    <constraint firstItem="GvZ-bF-czA" firstAttribute="centerY" secondItem="0um-PX-l1B" secondAttribute="centerY" id="z0V-r8-J8z"/>
+                                    <constraint firstItem="GvZ-bF-czA" firstAttribute="centerY" secondItem="0um-PX-l1B" secondAttribute="centerY" constant="9" id="z0V-r8-J8z"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAr-dw-JbR">
@@ -56,16 +56,16 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxl-ff-4gI">
-                                <rect key="frame" x="16" y="148" width="343" height="20"/>
+                                <rect key="frame" x="16" y="163" width="343" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="gge-QV-qTb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YV3-Te-p4a" customClass="RoundBtn" customModule="DUPhotoSystem" customModuleProvider="target">
-                                <rect key="frame" x="112.5" y="198" width="150" height="150"/>
+                                <rect key="frame" x="112.5" y="221" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.22943970561027527" green="0.34702008962631226" blue="0.59602290391921997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="0V7-Il-2CS"/>
@@ -77,19 +77,19 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yhr-5x-LYE">
-                                <rect key="frame" x="46" y="378" width="283" height="117"/>
+                                <rect key="frame" x="46" y="429" width="283" height="117"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZhP-Sn-4ub" customClass="FancyField" customModule="DUPhotoSystem" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="25"/>
                                         <color key="textColor" red="0.22943970561027527" green="0.34702008962631226" blue="0.59602290391921997" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qIW-qV-Hzo" customClass="FancyField" customModule="DUPhotoSystem" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="40" width="283" height="25"/>
                                         <color key="textColor" red="0.22943970559999999" green="0.34702008960000003" blue="0.59602290390000001" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ast-8Y-dBt" customClass="FancyBtn" customModule="DUPhotoSystem" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="80" width="283" height="37"/>
@@ -109,7 +109,7 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JAr-dw-JbR" secondAttribute="bottom" id="3TY-J5-K9E"/>
                             <constraint firstItem="0um-PX-l1B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="76X-ZN-6ud"/>
-                            <constraint firstItem="kxl-ff-4gI" firstAttribute="top" secondItem="0um-PX-l1B" secondAttribute="bottom" constant="20" id="CLB-gY-sXp"/>
+                            <constraint firstItem="kxl-ff-4gI" firstAttribute="top" secondItem="0um-PX-l1B" secondAttribute="bottom" constant="35" id="CLB-gY-sXp"/>
                             <constraint firstItem="yhr-5x-LYE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="KoF-hp-SC7"/>
                             <constraint firstAttribute="trailing" secondItem="0um-PX-l1B" secondAttribute="trailing" id="MIQ-6i-uhE"/>
                             <constraint firstAttribute="trailing" secondItem="JAr-dw-JbR" secondAttribute="trailing" id="QQN-aW-Dgd"/>
@@ -120,8 +120,8 @@
                             <constraint firstItem="0um-PX-l1B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="efL-Y3-SiH"/>
                             <constraint firstItem="YV3-Te-p4a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eiF-la-5Ja"/>
                             <constraint firstItem="yhr-5x-LYE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fZF-Bj-LMW"/>
-                            <constraint firstItem="yhr-5x-LYE" firstAttribute="top" secondItem="YV3-Te-p4a" secondAttribute="bottom" constant="30" id="hQ4-Eh-eOa"/>
-                            <constraint firstItem="YV3-Te-p4a" firstAttribute="top" secondItem="kxl-ff-4gI" secondAttribute="bottom" constant="30" id="tU7-7N-0Jw"/>
+                            <constraint firstItem="yhr-5x-LYE" firstAttribute="top" secondItem="YV3-Te-p4a" secondAttribute="bottom" constant="58" id="hQ4-Eh-eOa"/>
+                            <constraint firstItem="YV3-Te-p4a" firstAttribute="top" secondItem="kxl-ff-4gI" secondAttribute="bottom" constant="38" id="tU7-7N-0Jw"/>
                         </constraints>
                     </view>
                     <connections>
@@ -147,10 +147,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hj-DN-ifM" customClass="FancyView" customModule="DUPhotoSystem" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                 <subviews>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="KEl-3f-mdC">
-                                        <rect key="frame" x="8" y="12" width="61" height="41"/>
+                                        <rect key="frame" x="8" y="29" width="61" height="41"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="TCn-og-PDr"/>
@@ -161,7 +161,7 @@
                                         </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAD-IN-mlg">
-                                        <rect key="frame" x="158" y="14.5" width="59.5" height="36"/>
+                                        <rect key="frame" x="158" y="31" width="59.5" height="36"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -170,9 +170,9 @@
                                 <color key="backgroundColor" red="0.14901960780000001" green="0.77647058820000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="tAD-IN-mlg" firstAttribute="centerX" secondItem="7hj-DN-ifM" secondAttribute="centerX" id="Hyw-R7-Qvu"/>
-                                    <constraint firstItem="tAD-IN-mlg" firstAttribute="centerY" secondItem="KEl-3f-mdC" secondAttribute="centerY" id="cxM-4b-5Vw"/>
-                                    <constraint firstItem="KEl-3f-mdC" firstAttribute="top" secondItem="7hj-DN-ifM" secondAttribute="top" constant="12" id="m9M-cS-N9j"/>
-                                    <constraint firstAttribute="height" constant="65" id="nJ6-oI-AEw"/>
+                                    <constraint firstItem="tAD-IN-mlg" firstAttribute="centerY" secondItem="KEl-3f-mdC" secondAttribute="centerY" constant="-0.5" id="cxM-4b-5Vw"/>
+                                    <constraint firstItem="KEl-3f-mdC" firstAttribute="top" secondItem="7hj-DN-ifM" secondAttribute="top" constant="29" id="m9M-cS-N9j"/>
+                                    <constraint firstAttribute="height" constant="85" id="nJ6-oI-AEw"/>
                                     <constraint firstItem="KEl-3f-mdC" firstAttribute="leading" secondItem="7hj-DN-ifM" secondAttribute="leading" constant="8" id="vpZ-WU-QXz"/>
                                 </constraints>
                             </view>
@@ -182,7 +182,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NTe-6P-eo7">
                                         <rect key="frame" x="8" y="8" width="327" height="49"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="I2M-kS-W9X" customClass="CircleView" customModule="DUPhotoSystem" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="I2M-kS-W9X" customClass="CircleView" customModule="DUPhotoSystem" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.0" green="0.67450980390000004" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -194,7 +194,7 @@
                                                 <rect key="frame" x="59" y="0.0" width="209" height="49"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpP-ZI-Hzd" customClass="RoundBtn" customModule="DUPhotoSystem" customModuleProvider="target">
                                                 <rect key="frame" x="278" y="0.0" width="49" height="49"/>
@@ -217,22 +217,22 @@
                                     <constraint firstAttribute="height" constant="65" id="ovj-w9-flb"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="337" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NGi-xe-jnA">
-                                <rect key="frame" x="0.0" y="166" width="375" height="521"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="449" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NGi-xe-jnA">
+                                <rect key="frame" x="0.0" y="166" width="375" height="501"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="337" id="ycI-L9-XZv" customClass="PostCell" customModule="DUPhotoSystem" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="337"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="449" id="ycI-L9-XZv" customClass="PostCell" customModule="DUPhotoSystem" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="449"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ycI-L9-XZv" id="JTd-MP-axb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="337"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="449"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a70-Dr-gHD" customClass="FancyView" customModule="DUPhotoSystem" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="8" width="343" height="321"/>
+                                                    <rect key="frame" x="16" y="8" width="343" height="433"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9hO-LE-ntF">
-                                                            <rect key="frame" x="8" y="8" width="327" height="275"/>
+                                                            <rect key="frame" x="8" y="8" width="327" height="387"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzh-19-KSv">
                                                                     <rect key="frame" x="0.0" y="0.0" width="327" height="60"/>
@@ -246,8 +246,8 @@
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vince Luo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upC-mQ-vyF">
                                                                             <rect key="frame" x="60" y="0.0" width="207" height="60"/>
-                                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                                                            <color key="textColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="tid-zf-heH">
@@ -261,10 +261,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder5" translatesAutoresizingMaskIntoConstraints="NO" id="Fyf-pd-bPj">
-                                                                    <rect key="frame" x="0.0" y="68" width="327" height="149"/>
+                                                                    <rect key="frame" x="0.0" y="68" width="327" height="261"/>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nVJ-tB-rQs">
-                                                                    <rect key="frame" x="0.0" y="225" width="327" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="337" width="327" height="50"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="yRO-ep-khB"/>
@@ -276,12 +276,12 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Kda-a8-RJw">
-                                                            <rect key="frame" x="259" y="291" width="76" height="22"/>
+                                                            <rect key="frame" x="259" y="403" width="76" height="22"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tX-g0-xhL">
                                                                     <rect key="frame" x="0.0" y="0.0" width="36" height="22"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="textColor" red="0.14582490819999999" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QB-ID-qZL">
@@ -322,29 +322,19 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-JF-Gv2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                                <color key="backgroundColor" red="0.0" green="0.67450980390000004" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="0zy-mi-cqo"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NGi-xe-jnA" firstAttribute="leading" secondItem="cbZ-SU-o00" secondAttribute="leading" id="5Iw-TZ-EsG"/>
-                            <constraint firstAttribute="trailing" secondItem="TlB-JF-Gv2" secondAttribute="trailing" id="9q7-Kd-E0u"/>
-                            <constraint firstItem="PuM-iq-h8V" firstAttribute="top" secondItem="NGi-xe-jnA" secondAttribute="bottom" constant="-20" id="Kzg-4f-9Bi"/>
+                            <constraint firstItem="PuM-iq-h8V" firstAttribute="top" secondItem="NGi-xe-jnA" secondAttribute="bottom" id="Kzg-4f-9Bi"/>
                             <constraint firstItem="XEN-Ac-sYG" firstAttribute="top" secondItem="7hj-DN-ifM" secondAttribute="bottom" constant="8" id="ODw-gO-4Xq"/>
-                            <constraint firstItem="7hj-DN-ifM" firstAttribute="top" secondItem="cbZ-SU-o00" secondAttribute="top" constant="20" id="Wck-jv-QYF"/>
+                            <constraint firstItem="7hj-DN-ifM" firstAttribute="top" secondItem="cbZ-SU-o00" secondAttribute="top" id="Wck-jv-QYF"/>
                             <constraint firstItem="7hj-DN-ifM" firstAttribute="leading" secondItem="cbZ-SU-o00" secondAttribute="leading" id="Y1q-Sy-nQo"/>
                             <constraint firstAttribute="trailing" secondItem="NGi-xe-jnA" secondAttribute="trailing" id="eTk-Un-DsC"/>
                             <constraint firstAttribute="trailing" secondItem="7hj-DN-ifM" secondAttribute="trailing" id="fc0-NP-zsM"/>
                             <constraint firstItem="XEN-Ac-sYG" firstAttribute="leading" secondItem="cbZ-SU-o00" secondAttribute="leadingMargin" id="h8a-wh-RhL"/>
                             <constraint firstItem="NGi-xe-jnA" firstAttribute="top" secondItem="XEN-Ac-sYG" secondAttribute="bottom" constant="8" id="hGF-bg-HHT"/>
                             <constraint firstItem="XEN-Ac-sYG" firstAttribute="trailing" secondItem="cbZ-SU-o00" secondAttribute="trailingMargin" id="k8I-9z-RzI"/>
-                            <constraint firstItem="TlB-JF-Gv2" firstAttribute="leading" secondItem="cbZ-SU-o00" secondAttribute="leading" id="nCB-JI-x26"/>
-                            <constraint firstItem="TlB-JF-Gv2" firstAttribute="top" secondItem="cbZ-SU-o00" secondAttribute="top" id="zyY-jQ-bSC"/>
                         </constraints>
                     </view>
                     <connections>
@@ -359,13 +349,13 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="489.85507246376818" y="173.64130434782609"/>
+            <point key="canvasLocation" x="488.80000000000001" y="173.16341829085459"/>
         </scene>
     </scenes>
     <resources>
         <image name="add-image" width="88" height="88"/>
         <image name="add-post" width="88" height="88"/>
-        <image name="devslopes-logo" width="150" height="94"/>
+        <image name="duPhotoSharing-logo" width="252" height="94"/>
         <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
         <image name="placeholder5" width="1050" height="876"/>
