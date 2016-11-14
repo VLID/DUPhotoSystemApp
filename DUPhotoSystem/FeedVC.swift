@@ -22,6 +22,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     var imagePicker: UIImagePickerController!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
     var imageSelected = false
+    var usernameRef: FIRDatabaseReference!
+    var username = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,6 +101,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             print("VINCE: An image must be selected")
             return
         }
+        usernameRef = DataService.ds.REF_USER_CURRENT.child("username")
+        usernameRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            self.username = (snapshot.value as? String)!
+        })
         
         if let imgData = UIImageJPEGRepresentation(img, 0.2) {
             
@@ -114,18 +120,20 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                     print("VINCE: Successfully uploaded image to Firebase storage")
                     let downloadURL = metadata?.downloadURL()?.absoluteString
                     if let url = downloadURL {
-                        self.postToFirebase(imgUrl: url)
+                        self.postToFirebase(imgUrl: url, username: self.username)
                     }
                 }
             }
         }
     }
     
-    func postToFirebase(imgUrl: String) {
+    func postToFirebase(imgUrl: String, username: String) {
+        
         let post: Dictionary<String, AnyObject> = [
             "caption": captionField.text! as AnyObject,
             "imageUrl": imgUrl as AnyObject,
-            "likes": 0 as AnyObject
+            "likes": 0 as AnyObject,
+            "username": username as AnyObject
         ]
         
         let firebasePost = DataService.ds.REF_POSTS.childByAutoId()

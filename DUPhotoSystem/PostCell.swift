@@ -36,7 +36,7 @@ class PostCell: UITableViewCell {
         
         self.caption.text = post.caption
         self.likesLbl.text = "\(post.likes)"
-//        self.usernameLbl.text = ""
+        self.usernameLbl.text = post.username
         
         if img != nil {
             self.postImage.image = img

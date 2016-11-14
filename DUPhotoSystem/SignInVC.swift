@@ -36,7 +36,6 @@ class SignInVC: UIViewController {
     }
 
     @IBAction func facebookBtnTapped(_ sender: AnyObject) {
-        
         let facebookLogin = FBSDKLoginManager()
         facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
             if error != nil {
@@ -46,20 +45,33 @@ class SignInVC: UIViewController {
             } else {
                 print("VINCE: Successfully authenticated with Facebook")
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-                self.firebaseAuth(credential)
+                if (result?.grantedPermissions.contains("email"))! {
+                    if let graphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "email"]) {
+                        graphRequest.start(completionHandler: { (connection, result, error) in
+                            if error != nil {
+                                print(error!)
+                            } else {
+                                if let userEmail = result as? [String: String] {
+                                    let fb_email: String = userEmail["email"]!
+                                    self.firebaseAuth(credential: credential, username: self.getUsername(email: fb_email))
+                                }
+                            }
+                        })
+                    }
+                }
             }
         }
         
     }
     
-    func firebaseAuth(_ credential: FIRAuthCredential) {
+    func firebaseAuth(credential: FIRAuthCredential, username: String) {
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
             if error != nil {
                 print("VINCE: Unable to authenticate with Firebase - \(error)")
             } else {
                 print("VINCE: Successfully authenticated with Firebase")
                 if let user = user {
-                    let userData = ["provider": credential.provider]
+                    let userData = ["provider": credential.provider, "username": username]
                     self.completeSignIn(id: user.uid, userData: userData)
                 }
             }
@@ -72,7 +84,7 @@ class SignInVC: UIViewController {
                 if error == nil {
                     print("VINCE: User authenticated with Firebase")
                     if let user = user {
-                        let userData = ["provider": user.providerID]
+                        let userData = ["provider": user.providerID, "username": self.getUsername(email: email)]
                         self.completeSignIn(id: user.uid, userData: userData)
                     }
                 } else {
@@ -82,7 +94,7 @@ class SignInVC: UIViewController {
                         } else {
                             print("VINCE: Successfully authenticated with Firebase")
                             if let user = user {
-                                let userData = ["provider": user.providerID]
+                                let userData = ["provider": user.providerID, "username": self.getUsername(email: email)]
                                 self.completeSignIn(id: user.uid, userData: userData)
                             }
                         }
@@ -97,6 +109,12 @@ class SignInVC: UIViewController {
         let keychainResult =  KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("VINCE: Data saved to keychain \(keychainResult)")
         performSegue(withIdentifier: "goToFeed", sender: nil)
+    }
+    
+    func getUsername(email: String) -> String {
+        let rangeOfAt: Range<String.Index> = email.range(of: "@")!
+        let indexOfAt: Int = email.distance(from: email.startIndex, to: rangeOfAt.lowerBound)
+        return email.substring(to: email.index(email.startIndex, offsetBy: indexOfAt))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
